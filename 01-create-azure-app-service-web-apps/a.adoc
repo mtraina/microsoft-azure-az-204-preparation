@@ -1,0 +1,18 @@
+== Examine Azure App Service
+https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/2-azure-app-service
+
+== Examine Azure App Service plans
+https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/3-azure-app-service-plans
+
+== Deploy to App Service
+https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/4-deploy-code-to-app-service
+
+== Explore authentication and authorization in App Service
+https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/5-authentication-authorization-app-service
+
+== Discover App Service networking features
+https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/6-network-features
+
+== Exercise: Create a static HTML web app by using Azure Cloud Shell
+https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/7-create-html-web-app
+
