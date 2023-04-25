@@ -1,0 +1,11 @@
+== Examine autoscale factors
+https://learn.microsoft.com/en-gb/training/modules/scale-apps-app-service/2-autoscale-factors
+
+== Identify autoscale factors
+https://learn.microsoft.com/en-gb/training/modules/scale-apps-app-service/3-app-service-autoscale-conditions-rules
+
+== Enable autoscale in App Service
+https://learn.microsoft.com/en-gb/training/modules/scale-apps-app-service/4-autoscale-app-service
+
+== Explore autoscale best practices
+https://learn.microsoft.com/en-gb/training/modules/scale-apps-app-service/5-autoscale-best-practices
