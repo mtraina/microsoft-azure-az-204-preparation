@@ -1,0 +1,15 @@
+== Configure application settings
+https://learn.microsoft.com/en-us/training/modules/configure-web-app-settings/2-configure-application-settings
+
+== Configure general settings
+https://learn.microsoft.com/en-us/training/modules/configure-web-app-settings/3-configure-general-settings
+
+== Configure path mappings
+https://learn.microsoft.com/en-us/training/modules/configure-web-app-settings/4-configure-path-mappings
+
+== Enable diagnostic logging
+https://learn.microsoft.com/en-us/training/modules/configure-web-app-settings/5-enable-diagnostic-logging
+
+== Configure security certificates
+https://learn.microsoft.com/en-us/training/modules/configure-web-app-settings/6-configure-security-certificates
+

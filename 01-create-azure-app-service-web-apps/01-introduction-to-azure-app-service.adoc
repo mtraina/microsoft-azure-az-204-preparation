@@ -15,4 +15,3 @@ https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-ser
 
 == Exercise: Create a static HTML web app by using Azure Cloud Shell
 https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/7-create-html-web-app
-
