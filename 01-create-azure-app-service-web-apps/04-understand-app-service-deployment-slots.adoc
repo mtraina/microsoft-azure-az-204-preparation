@@ -1,0 +1,9 @@
+== Explore staging environments
+https://learn.microsoft.com/en-gb/training/modules/understand-app-service-deployment-slots/3-app-service-slot-swapping
+
+== Swap deployment slots
+https://learn.microsoft.com/en-gb/training/modules/understand-app-service-deployment-slots/4-swap-deployment-slots
+
+== Route traffic in App Service
+https://learn.microsoft.com/en-gb/training/modules/understand-app-service-deployment-slots/5-route-traffic-app-service
+
