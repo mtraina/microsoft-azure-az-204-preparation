@@ -1,0 +1,9 @@
+== Discover Azure Functions
+https://learn.microsoft.com/en-us/training/modules/explore-azure-functions/2-azure-functions-overview
+
+== Compare Azure Functions hosting options
+https://learn.microsoft.com/en-us/training/modules/explore-azure-functions/3-compare-azure-functions-hosting-options
+
+== Scale Azure Functions
+https://learn.microsoft.com/en-us/training/modules/explore-azure-functions/4-scale-azure-functions
+
