@@ -1,3 +1,11 @@
 == Explore Azure Functions development
 https://learn.microsoft.com/en-gb/training/modules/develop-azure-functions/2-azure-function-development-overview
 
+== Create triggers and bindings
+https://learn.microsoft.com/en-gb/training/modules/develop-azure-functions/3-create-triggers-bindings
+
+== Connect functions to Azure services
+https://learn.microsoft.com/en-gb/training/modules/develop-azure-functions/4-connect-azure-services
+
+== Exercise: Create an Azure Function by using Visual Studio Code
+https://learn.microsoft.com/en-gb/training/modules/develop-azure-functions/5-create-function-visual-studio-code

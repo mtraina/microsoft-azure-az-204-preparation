@@ -1,0 +1,8 @@
+{
+    "azureFunctions.deploySubpath": "02-implement-azure-functions/02.5-create-function-visual-studio-code/bin/Release/net6.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "02-implement-azure-functions/02.5-create-function-visual-studio-code",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}

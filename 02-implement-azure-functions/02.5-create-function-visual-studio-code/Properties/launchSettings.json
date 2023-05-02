@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "_02._5_create_function_visual_studio_code": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7251",
+      "launchBrowser": false
+    }
+  }
+}
