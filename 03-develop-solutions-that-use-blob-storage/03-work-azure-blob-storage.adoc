@@ -1,0 +1,26 @@
+== Explore Azure Blob storage client library
+https://learn.microsoft.com/en-gb/training/modules/work-azure-blob-storage/2-blob-storage-client-library-overview
+
+== Create a client object
+https://learn.microsoft.com/en-gb/training/modules/work-azure-blob-storage/3-create-client-object
+
+== Exercise: Create Blob storage resources by using the .NET client library
+https://learn.microsoft.com/en-gb/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet
+
+[source,shell]
+----
+az login
+az group create --location switzerlandnorth --name az204-blob-rg
+az storage account create --resource-group az204-blob-rg --name az204blobsa123123 --location switzerlandnorth --sku Standard_LRS
+
+# execute the command listed in the exercise
+
+az group delete --name az204-blob-rg --no-wait
+----
+
+== Manage container properties and metadata by using .NET
+https://learn.microsoft.com/en-gb/training/modules/work-azure-blob-storage/5-manage-container-properties-metadata-dotnet
+
+== Set and retrieve properties and metadata for blob resources by using REST
+https://learn.microsoft.com/en-gb/training/modules/work-azure-blob-storage/6-set-retrieve-properties-metadata-rest
+
