@@ -1,0 +1,23 @@
+== Explore Durable Functions app patterns
+https://learn.microsoft.com/en-gb/training/modules/implement-durable-functions/2-durable-functions-overview
+
+== Discover the four function types
+https://learn.microsoft.com/en-gb/training/modules/implement-durable-functions/3-durable-functions-types-features
+
+* Orchestrator functions
+* Activity functions
+* Entity functions
+* Client functions
+
+== Explore task hubs
+https://learn.microsoft.com/en-gb/training/modules/implement-durable-functions/4-durable-functions-task-hubs
+
+== Explore durable orchestrations
+https://learn.microsoft.com/en-gb/training/modules/implement-durable-functions/5-durable-orchestrations-overview
+
+== Control timing in Durable Functions
+https://learn.microsoft.com/en-gb/training/modules/implement-durable-functions/6-timers-durable-functions
+
+== Send and wait for events
+https://learn.microsoft.com/en-gb/training/modules/implement-durable-functions/7-external-events-durable-functions
+
