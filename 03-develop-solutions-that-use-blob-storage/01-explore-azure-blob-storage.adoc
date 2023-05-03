@@ -1,0 +1,9 @@
+== Discover Azure Blob storage resource types
+https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/3-blob-storage-resources
+
+== Explore Azure Storage security features
+https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/4-blob-storage-security
+
+== Discover static website hosting in Azure Storage
+https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/5-blob-storage-static-website
+
