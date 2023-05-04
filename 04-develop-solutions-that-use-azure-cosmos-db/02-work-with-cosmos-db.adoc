@@ -9,9 +9,20 @@ https://learn.microsoft.com/en-gb/training/modules/work-with-cosmos-db/3-exercis
 az login
 az group create --location switzerlandnorth --name az204-cosmos-rg
 az cosmosdb create --name az204cosmosdb123123 --resource-group az204-cosmos-rg
-# 
+# https://az204cosmosdb123123-switzerlandnorth.documents.azure.com:443/
 
 # Retrieve the primary key
 az cosmosdb keys list --name az204cosmosdb123123 --resource-group az204-cosmos-rg
 
+# clean up resources
+az group delete --name az204-cosmos-rg --no-wait
 ----
+
+== Create stored procedures
+https://learn.microsoft.com/en-gb/training/modules/work-with-cosmos-db/4-cosmos-db-stored-procedures
+
+== Create triggers and user-defined functions
+https://learn.microsoft.com/en-gb/training/modules/work-with-cosmos-db/5-cosmos-db-triggers-user-defined-functions
+
+== Explore change feed in Azure Cosmos DB
+https://learn.microsoft.com/en-gb/training/modules/work-with-cosmos-db/6-cosmos-db-change-feed
