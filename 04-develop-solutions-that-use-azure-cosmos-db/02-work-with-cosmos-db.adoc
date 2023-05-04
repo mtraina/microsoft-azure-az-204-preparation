@@ -1,0 +1,17 @@
+== Explore Microsoft .NET SDK v3 for Azure Cosmos DB
+https://learn.microsoft.com/en-gb/training/modules/work-with-cosmos-db/2-cosmos-db-dotnet-overview
+
+== Exercise: Create resources by using the Microsoft .NET SDK v3
+https://learn.microsoft.com/en-gb/training/modules/work-with-cosmos-db/3-exercise-work-cosmos-db-dotnet
+
+[source,shell]
+----
+az login
+az group create --location switzerlandnorth --name az204-cosmos-rg
+az cosmosdb create --name az204cosmosdb123123 --resource-group az204-cosmos-rg
+# 
+
+# Retrieve the primary key
+az cosmosdb keys list --name az204cosmosdb123123 --resource-group az204-cosmos-rg
+
+----
