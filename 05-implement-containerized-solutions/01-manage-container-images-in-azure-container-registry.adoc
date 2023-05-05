@@ -1,0 +1,40 @@
+== Discover the Azure Container Registry
+https://learn.microsoft.com/en-us/training/modules/publish-container-image-to-azure-container-registry/2-azure-container-registry-overview
+
+== Explore storage capabilities
+https://learn.microsoft.com/en-us/training/modules/publish-container-image-to-azure-container-registry/3-azure-container-registry-storage
+
+== Build and manage containers with tasks
+https://learn.microsoft.com/en-us/training/modules/publish-container-image-to-azure-container-registry/4-azure-container-registry-tasks
+
+== Explore elements of a Dockerfile
+https://learn.microsoft.com/en-us/training/modules/publish-container-image-to-azure-container-registry/5-dockerfile-components
+
+== Exercise: Build and run a container image by using Azure Container Registry Tasks
+https://learn.microsoft.com/en-us/training/modules/publish-container-image-to-azure-container-registry/6-build-run-image-azure-container-registry
+
+[source,shell]
+----
+az login
+
+RG=az204-acr-rg
+NAME=az204containerregistry123
+
+az group create --location switzerlandnorth --name $RG
+az acr create --resource-group $RG --name $NAME --sku Basic
+
+# Create and push an image
+echo FROM mcr.microsoft.com/hello-world > Dockerfile
+az acr build --image sample/hello-world:v1 --registry $NAME --file Dockerfile .
+
+# Veriy the results
+az acr repository list --name $NAME --output table
+az acr repository show-tags --name $NAME --repository sample/hello-world --output table
+
+# Run the image
+az acr run --registry <myContainerRegistry> \
+    --cmd '$Registry/sample/hello-world:v1' /dev/null
+
+# clean up resources
+az group delete --name $RG --no-wait
+----
