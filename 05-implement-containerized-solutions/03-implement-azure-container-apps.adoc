@@ -1,0 +1,33 @@
+== Explore Azure Container Apps
+https://learn.microsoft.com/en-gb/training/modules/implement-azure-container-apps/2-explore-azure-container-apps
+
+== Exercise - Deploy a container app
+https://learn.microsoft.com/en-gb/training/modules/implement-azure-container-apps/3-exercise-deploy-app
+
+[source,shell]
+----
+RG=az204-appcont-rg
+LOCATION=switzerlandnorth
+myAppContEnv=az204-env-$RANDOM
+
+az group create --location $LOCATION --name $RG
+
+# create an environment
+az containerapp env create \
+    --name $myAppContEnv \
+    --resource-group $RG \
+    --location $LOCATION
+
+# create a container app
+az containerapp create \
+    --name my-container-app \
+    --resource-group $RG \
+    --environment $myAppContEnv \
+    --image mcr.microsoft.com/azuredocs/containerapps-helloworld:latest \
+    --target-port 80 \
+    --ingress 'external' \
+    --query properties.configuration.ingress.fqdn
+
+# clean up resources
+az group delete --name $RG --no-wait
+----
