@@ -31,3 +31,15 @@ az containerapp create \
 # clean up resources
 az group delete --name $RG --no-wait
 ----
+
+== Explore containers in Azure Container Apps
+https://learn.microsoft.com/en-gb/training/modules/implement-azure-container-apps/4-container-apps-containers
+
+== Implement authentication and authorization in Azure Container Apps
+https://learn.microsoft.com/en-gb/training/modules/implement-azure-container-apps/5-container-apps-authentication
+
+== Manage revisions and secrets in Azure Container Apps
+https://learn.microsoft.com/en-gb/training/modules/implement-azure-container-apps/6-container-apps-revisions-secrets
+
+== Explore Dapr integration with Azure Container Apps
+https://learn.microsoft.com/en-gb/training/modules/implement-azure-container-apps/7-explore-distributed-application-runtime
