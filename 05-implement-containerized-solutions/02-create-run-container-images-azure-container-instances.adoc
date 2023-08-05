@@ -1,0 +1,61 @@
+== Explore Azure Container Instances
+https://learn.microsoft.com/en-us/training/modules/create-run-container-images-azure-container-instances/2-azure-container-instances-overview
+
+== Exercise - Deploy a container instance by using the Azure CLI
+[source,shell]
+----
+RG=az204-acr-rg
+LOCATION=switzerlandnorth
+DNS_NAME_LABEL=aci-example-$RANDOM
+
+az login
+az group create --location $LOCATION --name $RG
+
+# create the container
+az container create --resource-group $RG \
+    --name mycontainer \
+    --image mcr.microsoft.com/azuredocs/aci-helloworld \
+    --ports 80 \
+    --dns-name-label $DNS_NAME_LABEL --location $LOCATION
+
+# verify the container is running
+az container show --resource-group $RG \
+    --name mycontainer \
+    --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" \
+    --out table 
+
+# clean up resources
+az group delete --name $RG --no-wait
+----
+
+== Run containerized tasks with restart policies
+https://learn.microsoft.com/en-us/training/modules/create-run-container-images-azure-container-instances/4-run-containerized-tasks-restart-policies
+
+== Set environment variables in container instances
+https://learn.microsoft.com/en-us/training/modules/create-run-container-images-azure-container-instances/5-set-environment-variables-azure-container-instances
+
+[source,shell]
+----
+RG=az204-acr-rg
+LOCATION=switzerlandnorth
+
+az login
+az group create --location $LOCATION --name $RG
+
+# create the container
+az container create \
+    --resource-group $RG \
+    --name mycontainer2 \
+    --image mcr.microsoft.com/azuredocs/aci-wordcount:latest 
+    --restart-policy OnFailure \
+    --environment-variables 'NumWords'='5' 'MinLength'='8'
+
+# create the configuration yaml file (secure-env.yaml)
+
+# create the container using the configuration yaml file
+az container create --resource-group $RG \
+    --file secure-env.yaml \
+
+# clean up resources
+az group delete --name $RG --no-wait
+----
