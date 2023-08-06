@@ -1,0 +1,11 @@
+== Discover Microsoft Graph
+https://learn.microsoft.com/en-gb/training/modules/microsoft-graph/2-microsoft-graph-overview
+
+== Query Microsoft Graph by using REST
+https://learn.microsoft.com/en-gb/training/modules/microsoft-graph/3-microsoft-graph-api
+
+== Query Microsoft Graph by using SDKs
+https://learn.microsoft.com/en-gb/training/modules/microsoft-graph/4-microsoft-graph-sdk
+
+== Apply best practices to Microsoft Graph
+https://learn.microsoft.com/en-gb/training/modules/microsoft-graph/5-microsoft-graph-best-practices

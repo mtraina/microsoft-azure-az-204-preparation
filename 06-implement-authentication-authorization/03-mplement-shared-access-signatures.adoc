@@ -1,0 +1,8 @@
+== Discover shared access signatures
+https://learn.microsoft.com/en-gb/training/modules/implement-shared-access-signatures/2-shared-access-signatures-overview
+
+== Choose when to use shared access signatures
+https://learn.microsoft.com/en-gb/training/modules/implement-shared-access-signatures/3-shared-access-signatures
+
+== Explore stored access policies
+https://learn.microsoft.com/en-gb/training/modules/implement-shared-access-signatures/4-stored-access-policies
