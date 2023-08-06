@@ -1,0 +1,11 @@
+== Explore the Microsoft identity platform
+https://learn.microsoft.com/en-us/training/modules/explore-microsoft-identity-platform/2-microsoft-identity-platform-overview
+
+== Explore service principals
+https://learn.microsoft.com/en-us/training/modules/explore-microsoft-identity-platform/3-app-service-principals
+
+== Discover permissions and consent
+https://learn.microsoft.com/en-us/training/modules/explore-microsoft-identity-platform/4-permission-consent
+
+== Discover conditional access
+https://learn.microsoft.com/en-us/training/modules/explore-microsoft-identity-platform/5-conditional-access
