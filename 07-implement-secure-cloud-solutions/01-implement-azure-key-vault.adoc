@@ -1,0 +1,12 @@
+== Explore Azure Key Vault
+https://learn.microsoft.com/en-us/training/modules/i01-√mplement-azure-key-vault/2-key-vault-overview
+
+== Discover Azure Key Vault best practices
+https://learn.microsoft.com/en-us/training/modules/i01-√mplement-azure-key-vault/2-key-vault-overview
+
+== Authenticate to Azure Key Vault
+https://learn.microsoft.com/en-us/training/modules/i01-√mplement-azure-key-vault/2-key-vault-overview
+
+== Exercise: Set and retrieve a secret from Azure Key Vault by using Azure CLI
+https://learn.microsoft.com/en-us/training/modules/i01-√mplement-azure-key-vault/2-key-vault-overview
+
