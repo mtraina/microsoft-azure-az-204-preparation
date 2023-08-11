@@ -1,0 +1,12 @@
+== Explore managed identities
+https://learn.microsoft.com/en-us/training/modules/implement-managed-identities/2-managed-identities-overview
+
+== Discover the managed identities authentication flow
+https://learn.microsoft.com/en-us/training/modules/implement-managed-identities/3-managed-identities-auzre-virtual-machines
+
+== Configure managed identities
+https://learn.microsoft.com/en-us/training/modules/implement-managed-identities/4-configure-managed-identities
+
+== Acquire an access token
+https://learn.microsoft.com/en-us/training/modules/implement-managed-identities/5-acquire-access-token
+

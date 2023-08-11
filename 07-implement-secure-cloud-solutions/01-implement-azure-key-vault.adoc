@@ -9,4 +9,3 @@ https://learn.microsoft.com/en-us/training/modules/i01-√mplement-azure-key-vau
 
 == Exercise: Set and retrieve a secret from Azure Key Vault by using Azure CLI
 https://learn.microsoft.com/en-us/training/modules/i01-√mplement-azure-key-vault/2-key-vault-overview
-
