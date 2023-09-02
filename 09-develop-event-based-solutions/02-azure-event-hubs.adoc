@@ -1,0 +1,14 @@
+== Discover Azure Event Hubs
+https://learn.microsoft.com/en-us/training/modules/azure-event-hubs/2-event-hubs-overview
+
+== Explore Event Hubs Capture
+https://learn.microsoft.com/en-us/training/modules/azure-event-hubs/3-event-hubs-capture
+
+== Scale your processing application
+https://learn.microsoft.com/en-us/training/modules/azure-event-hubs/4-event-processing
+
+== Control access to events
+https://learn.microsoft.com/en-us/training/modules/azure-event-hubs/5-event-hubs-authentication-authorization
+
+== Perform common operations with the Event Hubs client library
+https://learn.microsoft.com/en-us/training/modules/azure-event-hubs/6-event-hubs-programming-guide
