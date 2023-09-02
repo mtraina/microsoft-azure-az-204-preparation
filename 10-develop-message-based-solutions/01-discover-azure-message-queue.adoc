@@ -1,0 +1,12 @@
+== Choose a message queue solution
+https://learn.microsoft.com/en-us/training/modules/01/2-choose-queue-solution
+
+== Explore Azure Service Bus
+https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/3-azure-service-bus-overview
+
+== Discover Service Bus queues, topics, and subscriptions
+https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/4-queues-topics-subscriptions
+
+== Explore Service Bus message payloads and serialization
+https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/5-messages-payloads-serialization
+
