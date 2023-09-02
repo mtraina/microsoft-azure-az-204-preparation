@@ -1,0 +1,42 @@
+== Discover the API Management service
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/2-api-management-overview
+
+== Explore API gateways
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/3-api-gateways
+
+== Explore API Management policies
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/4-api-management-policies
+
+== Create advanced policies
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/5-create-advanced-policies
+
+== Secure APIs by using subscriptions
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/6-secure-access-api-subscriptions
+
+== Secure APIs by using certificates
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/7-secure-access-api-certificates
+
+== Exercise - Create a backend API
+[source,shell]
+----
+az login
+
+myApiName=az204-apim-$RANDOM
+myLocation=switzerlandnorth
+myEmail=test@test.com
+RG=az204-apim-rg
+NAME=AZ204-APIM-Exercise
+
+az group create --location $myLocation --name $RG
+
+# create API Management instance
+az apim create -n $myApiName \
+    --location $myLocation \
+    --publisher-email $myEmail  \
+    --resource-group $RG \
+    --publisher-name $NAME \
+    --sku-name Consumption 
+
+# clean up resources
+az group delete --name $RG --no-wait
+----

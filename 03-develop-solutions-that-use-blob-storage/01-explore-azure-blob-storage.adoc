@@ -6,4 +6,3 @@ https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/4-
 
 == Discover static website hosting in Azure Storage
 https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/5-blob-storage-static-website
-

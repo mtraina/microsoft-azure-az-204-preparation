@@ -6,4 +6,3 @@ https://learn.microsoft.com/en-gb/training/modules/implement-authentication-by-u
 
 == Exercise - Implement interactive authentication by using MSAL.NET
 https://learn.microsoft.com/en-gb/training/modules/implement-authentication-by-using-microsoft-authentication-library/4-interactive-authentication-msal
-

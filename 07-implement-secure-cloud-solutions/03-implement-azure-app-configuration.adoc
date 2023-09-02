@@ -9,4 +9,3 @@ https://learn.microsoft.com/en-us/training/modules/implement-azure-app-configura
 
 == Secure app configuration data
 https://learn.microsoft.com/en-us/training/modules/implement-azure-app-configuration/5-secure-app-configuration-data
-
