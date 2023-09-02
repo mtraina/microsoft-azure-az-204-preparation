@@ -17,6 +17,8 @@ https://learn.microsoft.com/en-us/training/modules/explore-api-management/6-secu
 https://learn.microsoft.com/en-us/training/modules/explore-api-management/7-secure-access-api-certificates
 
 == Exercise - Create a backend API
+https://learn.microsoft.com/en-us/training/modules/explore-api-management/8-exercise-import-api
+
 [source,shell]
 ----
 az login

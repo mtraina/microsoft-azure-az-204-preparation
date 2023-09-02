@@ -1,0 +1,72 @@
+== Explore Azure Event Grid
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/2-event-grid-overview
+
+== Discover event schemas
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/3-event-grid-schema
+
+== Explore event delivery durability
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/4-event-grid-delivery-retry
+
+== Control access to events
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/5-authorize-access-event-grid
+
+== Receive events by using webhooks
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/6-webhook-event-delivery
+
+== Filter events
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/7-event-grid-filtering
+
+== Exercise - Route custom events to web endpoint by using Azure CLI
+https://learn.microsoft.com/en-us/training/modules/azure-event-grid/8-event-grid-custom-events
+
+[source,shell]
+----
+az login
+
+((rNum=$RANDOM*$RANDOM)) # for zsh, use "let" for bash
+myLocation=switzerlandnorth
+myTopicName="az204-egtopic-${rNum}"
+mySiteName="az204-egsite-${rNum}"
+mySiteURL="https://${mySiteName}.azurewebsites.net"
+RG=az204-evgrid-rg
+
+az group create --location $myLocation --name $RG
+
+# register the event grid resource provider
+az provider register --namespace Microsoft.EventGrid
+az provider show --namespace Microsoft.EventGrid --query "registrationState"
+
+# create a custom topic
+az eventgrid topic create --name $myTopicName \
+    --location $myLocation \
+    --resource-group $RG
+
+# create a message endpoint
+az deployment group create \
+    --resource-group az204-evgrid-rg \
+    --template-uri "https://raw.githubusercontent.com/Azure-Samples/azure-event-grid-viewer/main/azuredeploy.json" \
+    --parameters siteName=$mySiteName hostingPlanName=viewerhost
+
+echo "Your web app URL: ${mySiteURL}"
+
+# subscribe to a custom topic
+endpoint="${mySiteURL}/api/updates"
+subId=$(az account show --subscription "" | jq -r '.id')
+
+az eventgrid event-subscription create \
+    --source-resource-id "/subscriptions/$subId/resourceGroups/az204-evgrid-rg/providers/Microsoft.EventGrid/topics/$myTopicName" \
+    --name az204ViewerSub \
+    --endpoint $endpoint
+
+# send an event to your custom topic
+topicEndpoint=$(az eventgrid topic show --name $myTopicName -g az204-evgrid-rg --query "endpoint" --output tsv)
+key=$(az eventgrid topic key list --name $myTopicName -g az204-evgrid-rg --query "key1" --output tsv)
+
+event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Contoso", "model": "Monster"},"dataVersion": "1.0"} ]'
+
+curl -X POST -H "aeg-sas-key: $key" -d "$event" $topicEndpoint
+
+
+# clean up resources
+az group delete --name $RG --no-wait
+----
