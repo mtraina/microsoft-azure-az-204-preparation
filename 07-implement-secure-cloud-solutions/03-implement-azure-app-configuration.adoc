@@ -1,0 +1,12 @@
+== Explore the Azure App Configuration service
+https://learn.microsoft.com/en-us/training/modules/implement-azure-app-configuration/2-app-configuration-overview
+
+== Create paired keys and values
+https://learn.microsoft.com/en-us/training/modules/implement-azure-app-configuration/3-keys-values
+
+== Manage application features
+https://learn.microsoft.com/en-us/training/modules/implement-azure-app-configuration/4-app-configuration-feature-management
+
+== Secure app configuration data
+https://learn.microsoft.com/en-us/training/modules/implement-azure-app-configuration/5-secure-app-configuration-data
+

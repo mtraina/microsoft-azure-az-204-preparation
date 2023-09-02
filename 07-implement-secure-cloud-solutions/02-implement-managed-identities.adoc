@@ -9,4 +9,3 @@ https://learn.microsoft.com/en-us/training/modules/implement-managed-identities/
 
 == Acquire an access token
 https://learn.microsoft.com/en-us/training/modules/implement-managed-identities/5-acquire-access-token
-
