@@ -6,4 +6,3 @@ https://learn.microsoft.com/en-us/training/modules/develop-for-storage-cdns/3-co
 
 == Interact with Azure Content Delivery Networks by using .NET
 https://learn.microsoft.com/en-us/training/modules/develop-for-storage-cdns/4-azure-cdn-libraries-dotnet
-
