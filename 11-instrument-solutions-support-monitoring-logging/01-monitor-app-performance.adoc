@@ -1,0 +1,15 @@
+== Explore Application Insights
+https://learn.microsoft.com/en-us/training/modules/monitor-app-performance/2-application-insights-overview
+
+== Discover log-based metrics
+https://learn.microsoft.com/en-us/training/modules/monitor-app-performance/3-logs-based-metrics
+
+== Instrument an app for monitoring
+https://learn.microsoft.com/en-us/training/modules/monitor-app-performance/4-app-instrumentation
+
+== Select an availability test
+https://learn.microsoft.com/en-us/training/modules/monitor-app-performance/5-availability-tests
+
+== Troubleshoot app performance by using Application Map
+https://learn.microsoft.com/en-us/training/modules/monitor-app-performance/6-application-map
+
