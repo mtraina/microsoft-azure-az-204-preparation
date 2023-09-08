@@ -10,3 +10,38 @@ https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/
 == Explore Service Bus message payloads and serialization
 https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/5-messages-payloads-serialization
 
+== Exercise: Send and receive message from a Service Bus queue by using .NET
+https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/6-send-receive-messages-service-bus
+
+[source,shell]
+----
+az login
+
+myLocation=switzerlandnorth
+myNameSpaceName=az204svcbus$RANDOM
+RG=az204-svcbus-rg
+queueName=az204-queue
+
+az group create --location $myLocation --name $RG
+
+# Create a Service Bus messaging namespace
+az servicebus namespace create \
+    --resource-group $RG \
+    --name $myNameSpaceName \
+    --location $myLocation
+
+# Create a Service Bus queue
+az servicebus queue create --resource-group $RG \
+    --namespace-name $myNameSpaceName \
+    --name $queueName
+
+# clean up resources
+az group delete --name $RG --no-wait
+----
+
+== Explore Azure Queue Storage
+https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/7-azure-queue-storage-overview
+
+== Create and manage Azure Queue Storage and messages by using .NET
+https://learn.microsoft.com/en-us/training/modules/discover-azure-message-queue/8-queue-storage-code-examples
+
