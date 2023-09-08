@@ -1,0 +1,11 @@
+== Explore Azure Cache for Redis
+https://learn.microsoft.com/en-us/training/modules/develop-for-azure-cache-for-redis/2-azure-cache-redis-overview
+
+== Configure Azure Cache for Redis
+https://learn.microsoft.com/en-us/training/modules/develop-for-azure-cache-for-redis/3-configure-azure-cache-redis
+
+== Interact with Azure Cache for Redis by using .NET
+https://learn.microsoft.com/en-us/training/modules/develop-for-azure-cache-for-redis/4-interact-redis-api
+
+== Exercise - Connect an app to Azure Cache for Redis by using .NET Core
+https://learn.microsoft.com/en-us/training/modules/develop-for-azure-cache-for-redis/5-console-app-azure-cache-redis
